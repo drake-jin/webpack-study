@@ -1,0 +1,12 @@
+{
+  "name": "webpack-basic",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.10.2",
+    "webpack-cli": "^3.0.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.10"
+  }
+}
