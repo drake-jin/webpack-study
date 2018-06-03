@@ -1,11 +1,11 @@
 # Webpack-basic 시작하기 
 
 
-1. Setting package.json
+1. Setting npm & package.json & node_modules
 
 ``` sh
 
-mkdir webpack-basic && cd webpack-basic
+mkdir getting-started && cd getting-started
 yarn init
 yarn add --dev webpack webpack-cli 
 

@@ -2,6 +2,9 @@
   "name": "webpack-basic",
   "version": "1.0.0",
   "license": "MIT",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack"
+  },
   "devDependencies": {
     "webpack": "^4.10.2",
     "webpack-cli": "^3.0.1"
