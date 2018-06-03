@@ -28,3 +28,8 @@ webpack은 API(프로그래밍 라이브러리)그리고 CLI(커멘드 프로그
 웹팩에서 모든 것은 모듈이다. 자바스크립트(JS), 스타일시트(CSS), 이미지(Image)이 모든것들을 자바스크립트의 모듈로써 로딩해서 사용한다.
 
 
+
+# 참고
+
+1. http://blog.jeonghwan.net/js/2017/05/15/webpack.html
+2. https://imskojs.github.io/webpack-concept/
