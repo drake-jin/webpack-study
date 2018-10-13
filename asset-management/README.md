@@ -14,17 +14,18 @@
 mkdir asset-management && cd asset-management
 yarn init
 yarn add --dev webpack webpack-cli lodash style-loader css-loader
+yarn add lodash
 ```
 
 #### 1. project setting 파일 생성
 
->   webpack-demo
+>   asset-management
 >   |- package.json
 >   |- webpack.config.js
 >   |- /dist
 >     |- index.html
 >   |- /src
-> +   |- style.css
+>     |- style.css
 >     |- index.js
 >   |- /node_modules
 
@@ -129,7 +130,7 @@ yarn start
 ### 결과
 
 1. 작업이 끝나면, 먼저 결과 화면을 살펴보자.
-2. ./dist/index.html 을 열어서 .hello에 대한 내용이 변경되어있는가? 를 확인해보자.
+2. ./dist/index.html w을 열어서 .hello에 대한 내용이 변경되어있는가? 를 확인해보자.
 3. ./dist/bundle.js 에서 Ctrl + F 로 .hello 찾아 보기, 어떻게 작성되어있을까?
 
 > 결론: *.css에 대한 내용은 js에서 담기게 되었다. 즉 번들링이 되었다.
@@ -233,8 +234,21 @@ wget https://i.imgur.com/5Jr04eQ.png
 mv 5Jr04eQ.png icon.png
 cd ../
 ```
+#### 5. ./src/style.css
 
-#### 5. execute command lines
+``` css
+.hello {
+  color: red;
+  font-family: 'nanum';
+  width: 100%;
+  height: 100%;
+  background-image: url('./icon.png');
+  background-size: 10%;
+}
+```
+
+
+#### 6. execute command lines
 
 ``` bash
 yarn start
@@ -291,7 +305,6 @@ module.exports = {
 
 ``` bash
 wget https://fonts.gstatic.com/s/nanumgothic/v7/PN_3Rfi-oW3hYwmKDpxS7F_D-djb.ttf
-
 mv PN_3Rfi-oW3hYwmKDpxS7F_D-djb.ttf nanum.ttf
 ```
 

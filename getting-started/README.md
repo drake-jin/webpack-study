@@ -7,7 +7,8 @@
 
 mkdir getting-started && cd getting-started
 yarn init
-yarn add --dev webpack webpack-cli 
+yarn add --dev webpack webpack-cli
+yarn add lodash
 
 ```
 
@@ -171,7 +172,7 @@ module.exports = {
 #### 명령어 실행
 
 ``` sh
-./node_modules/.bin/webpack --config webpack.config.js
+./node_modules/.bin/webpack --config webpack.config.js --mode development
 # --config webpack.config.js => webpack.config.js는 현재 웹팩 명령어의 기본 설정 파일로써 지정되어있다. 만약 설정파일이 다른 이름이라면,
 # --config option을 사용하여, 파일 이름을 입력하면 된다
 
